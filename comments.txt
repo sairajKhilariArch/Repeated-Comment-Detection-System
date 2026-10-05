@@ -1,0 +1,102 @@
+Format: id | post_id | author | text
+
+1|video_01|TechGeek99|This tutorial is absolute gold! Thank you so much for explaining lifetimes so clearly.
+2|video_01|CodeNovice|This tutorial is absolute gold! Thank you so much for explaining lifetimes so clearly!!
+3|video_01|SpamBot2024|SUBSCRIBE TO MY CHANNEL FOR FREE ROBUX $$$ 😍😍😍🔥🔥🔥 
+4|vert{}video_01|vert{}RustaceanPro|vert{}Great explanation, though I think async-std is also worth mentioning. 
+5|vert{}video_01|vert{}SpamBot2024|vert{}SUBSCRIBE TO MY CHANNEL FOR FREE ROBUX $$$ 😍😍😍🔥🔥🔥 
+6|vert{}video_01|vert{}CodeNovice|vert{}This tutorial is absolute gold! Thank you so much for explaining lifetimes so clearly. 
+7|vert{}video_01|vert{}SarahCodes|vert{}Finally, a video that doesn't skip over the error handling part. Appreciate it! 
+8|vert{}video_01|vert{}SpamBot2024|vert{}SUBSCRIBE TO MY CHANNEL FOR FREE ROBUX $$$ 😍😍😍🔥🔥🔥
+9|video_01|AlexDev|Can you do a follow-up video on macro programming?
+10|video_01|TechGeek99|This tutorial is absolute gold! Thank you so much for explaining lifetimes so clearly.
+11|video_01|DevGuy99|Can you do a follow up video on macro programming?
+12|video_01|CryptoScamKing|MAKE $5000 DAILY FROM HOME CLICK LINK IN BIO 🚀🚀🚀
+13|video_01|RustNewbie|I've been struggling with borrow checker for days and this finally clicked.
+14|video_01|BhavdeepJ|Awesome video guys! Group 4 rocks.
+15|video_01|CryptoScamKing|MAKE $5000 DAILY FROM HOME CLICK LINK IN BIO 🚀🚀🚀
+16|video_01|SairajK|The pacing of this explanation was spot on.
+17|video_01|SandipB|Can you cover unsafe Rust in the next session?
+18|video_01|CodeNovice|I've been struggling with borrow checker for days and this finally clicked.
+19|video_01|ViewerX|Wait, what timestamp did you use for that struct definition?
+20|video_01|FreeGiftCardBot|CLAIM YOUR FREE $100 GIFT CARD NOW AT scamlink.xyz 🎁🎁
+21|video_01|CodeMaster|Awesome content as always. Subscribed!
+22|video_01|RustaceanPro|Great explanation, though I think async std is also worth mentioning.
+23|video_01|FreeGiftCardBot|CLAIM YOUR FREE $100 GIFT CARD NOW AT scamlink.xyz 🎁🎁
+24|video_01|JaneDoe|Subscribed! Awesome content as always.
+25|video_01|JohnSmith|Is Rust better than C++ for embedded systems?
+26|video_01|FreeGiftCardBot|CLAIM YOUR FREE $100 GIFT CARD NOW AT scamlink.xyz 🎁🎁
+27|video_01|DevGuru|Is Rust better than C++ for embedded systems?
+28|video_01|AnanyaRoy|The code examples on GitHub were super clean. Thanks!
+29|video_01|SpamBot2024|SUBSCRIBE TO MY CHANNEL FOR FREE ROBUX $$$ 😍😍😍🔥🔥🔥 
+30|vert{}video_01|vert{}AnanyaRoy|vert{}The code examples on GitHub were super clean. Thanks! 
+31|vert{}video_02|vert{}ReactFanatic|vert{}Next do a comparison between React Server Components and SolidJS! 
+32|vert{}video_02|vert{}WebDevPro|vert{}Next do a comparison between React Server Components and SolidJS! 
+33|vert{}video_02|vert{}SpamBot999|vert{}WANT FREE NITRO? JOIN MY DISCORD SERVER NOW 🎮🎮🎮 
+34|vert{}video_02|vert{}FrontendNoob|vert{}This cleared up useEffect dependencies so well. 
+35|vert{}video_02|vert{}SpamBot999|vert{}WANT FREE NITRO? JOIN MY DISCORD SERVER NOW 🎮🎮🎮 
+36|vert{}video_02|vert{}FrontendNoob|vert{}This cleared up useEffect dependencies so well!! 
+37|vert{}video_02|vert{}CodeQueen|vert{}Why did you choose Vite over Next.js for this project setup? 
+38|vert{}video_02|vert{}SpamBot999|vert{}WANT FREE NITRO? JOIN MY DISCORD SERVER NOW 🎮🎮🎮 
+39|vert{}video_02|vert{}TomHanksFan|vert{}Lol that joke at 4:25 caught me totally off guard. 
+40|vert{}video_02|vert{}CodeQueen|vert{}Why did you choose Vite over Next.js for this project setup? 
+41|vert{}video_02|vert{}ReactFanatic|vert{}Next do a comparison between React Server Components and SolidJS. 
+42|vert{}video_02|vert{}BadBot|vert{}!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+43|vert{}video_02|vert{}Samwise|vert{}State management has never looked so straightforward. 
+44|vert{}video_02|vert{}FrodoB|vert{}State management has never looked so straightforward. 
+45|vert{}video_02|vert{}BadBot|vert{}!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+46|vert{}video_02|vert{}GandalfTheGrey|vert{}Fly you fools and write clean code! 
+47|vert{}video_02|vert{}Samwise|vert{}State management has never looked so straightforward. 
+48|vert{}video_02|vert{}MatrixCoder|vert{}Redux Toolkit is still relevant in 2026 change my mind. 
+49|vert{}video_02|vert{}BadBot|vert{}!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+50|vert{}video_02|vert{}MatrixCoder|vert{}Redux Toolkit is still relevant in 2026 change my mind. 
+51|vert{}video_03|vert{}SystemArchitect|vert{}Microservices vs Monoliths is always a great debate topic. 
+52|vert{}video_03|vert{}CloudEngineer|vert{}Microservices vs Monoliths is always a great debate topic! 
+53|vert{}video_03|vert{}SpamBotX|vert{}HOT SINGLES IN YOUR AREA CLICK HERE 🔥🔥🔥 
+54|vert{}video_03|vert{}DevOpsNinja|vert{}Kubernetes configuration section was extremely helpful. 
+55|vert{}video_03|vert{}SpamBotX|vert{}HOT SINGLES IN YOUR AREA CLICK HERE 🔥🔥🔥 
+56|vert{}video_03|vert{}DevOpsNinja|vert{}Kubernetes configuration section was extremely helpful. 
+57|vert{}video_03|vert{}BackendHero|vert{}Can you make a video on gRPC versus REST APIs? 
+58|vert{}video_03|vert{}SpamBotX|vert{}HOT SINGLES IN YOUR AREA CLICK HERE 🔥🔥🔥 
+59|vert{}video_03|vert{}BackendHero|vert{}Can you make a video on gRPC versus REST APIs? 
+60|vert{}video_03|vert{}DatabaseGeek|vert{}Postgres indexing tips saved my database query performance. 
+61|vert{}video_03|vert{}DatabaseGeek|vert{}Postgres indexing tips saved my database query performance! 
+62|vert{}video_03|vert{}DockerMaster|vert{}Docker multi-stage builds explained so simply. Thank you! 
+63|vert{}video_03|vert{}DockerMaster|vert{}Docker multi-stage builds explained so simply. Thank you! 
+64|vert{}video_03|vert{}SecurityAuditor|vert{}OAuth2 authorization code flow with PKCE is crucial. 
+65|vert{}video_03|vert{}SecurityAuditor|vert{}OAuth2 authorization code flow with PKCE is crucial. 
+66|vert{}video_01|vert{}TechGeek99|vert{}This tutorial is absolute gold! Thank you so much for explaining lifetimes so clearly. 
+67|vert{}video_01|vert{}RustaceanPro|vert{}Great explanation, though I think async-std is also worth mentioning. 
+68|vert{}video_01|vert{}AlexDev|vert{}Can you do a follow-up video on macro programming? 
+69|vert{}video_01|vert{}SarahCodes|vert{}Finally, a video that doesn't skip over the error handling part. Appreciate it! 
+70|vert{}video_01|vert{}CodeNovice|vert{}This tutorial is absolute gold! Thank you so much for explaining lifetimes so clearly. 
+71|vert{}video_02|vert{}ReactFanatic|vert{}Next do a comparison between React Server Components and SolidJS! 
+72|vert{}video_02|vert{}FrontendNoob|vert{}This cleared up useEffect dependencies so well. 
+73|vert{}video_02|vert{}CodeQueen|vert{}Why did you choose Vite over Next.js for this project setup? 
+74|vert{}video_02|vert{}TomHanksFan|vert{}Lol that joke at 4:25 caught me totally off guard. 
+75|vert{}video_02|vert{}Samwise|vert{}State management has never looked so straightforward. 
+76|vert{}video_03|vert{}SystemArchitect|vert{}Microservices vs Monoliths is always a great debate topic. 
+77|vert{}video_03|vert{}DevOpsNinja|vert{}Kubernetes configuration section was extremely helpful. 
+78|vert{}video_03|vert{}BackendHero|vert{}Can you make a video on gRPC versus REST APIs? 
+79|vert{}video_03|vert{}DatabaseGeek|vert{}Postgres indexing tips saved my database query performance. 
+80|vert{}video_03|vert{}DockerMaster|vert{}Docker multi-stage builds explained so simply. Thank you! 
+81|vert{}video_01|vert{}RandomUser1|vert{}Found this via the recommendation algorithm. Awesome watch! 
+82|vert{}video_01|vert{}RandomUser2|vert{}Found this via the recommendation algorithm. Awesome watch! 
+83|vert{}video_01|vert{}SpamBot2024|vert{}SUBSCRIBE TO MY CHANNEL FOR FREE ROBUX $$$ 😍😍😍🔥🔥🔥
+84|video_01|RustNewbie|I've been struggling with borrow checker for days and this finally clicked.
+85|video_01|ViewerX|Wait, what timestamp did you use for that struct definition?
+86|video_02|WebDevPro|Next do a comparison between React Server Components and SolidJS!
+87|video_02|FrontendNoob|This cleared up useEffect dependencies so well!!
+88|video_02|MatrixCoder|Redux Toolkit is still relevant in 2026 change my mind.
+89|video_02|SpamBot999|WANT FREE NITRO? JOIN MY DISCORD SERVER NOW 🎮🎮🎮
+90|video_02|Samwise|State management has never looked so straightforward.
+91|video_03|CloudEngineer|Microservices vs Monoliths is always a great debate topic!
+92|video_03|SecurityAuditor|OAuth2 authorization code flow with PKCE is crucial.
+93|video_03|BackendHero|Can you make a video on gRPC versus REST APIs?
+94|video_03|SpamBotX|HOT SINGLES IN YOUR AREA CLICK HERE 🔥🔥🔥
+95|video_03|DockerMaster|Docker multi-stage builds explained so simply. Thank you!
+96|video_01|SandipB|Can you cover unsafe Rust in the next session?
+97|video_01|SairajK|The pacing of this explanation was spot on.
+98|video_01|BhavdeepJ|Awesome video guys! Group 4 rocks.
+99|video_02|CodeQueen|Why did you choose Vite over Next.js for this project setup?
+100|video_03|SystemArchitect|Microservices vs Monoliths is always a great debate topic.

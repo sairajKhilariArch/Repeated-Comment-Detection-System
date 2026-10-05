@@ -182,92 +182,70 @@ impl CommentDetector {
     }
 }
 
+pub fn load_comments_from_file(filepath: &str) -> Vec<Comment> {
+    use std::fs::File;
+    use std::io::{BufRead, BufReader};
+
+    // Strict dependency on external file: do not create hardcoded defaults
+    if !std::path::Path::new(filepath).exists() {
+        println!(
+            "[Error] External comment file '{}' not found. Please ensure the file exists before running the system.",
+            filepath
+        );
+        return Vec::new();
+    }
+
+    let file = match File::open(filepath) {
+        Ok(f) => f,
+        Err(e) => {
+            println!("[Error] Failed to open '{}': {}", filepath, e);
+            return Vec::new();
+        }
+    };
+
+    let reader = BufReader::new(file);
+    let mut comments = Vec::new();
+    let mut timestamp_base = 1718000000_u64;
+
+    for (i, line) in reader.lines().enumerate() {
+        if let Ok(l) = line {
+            let l = l.trim();
+            if l.is_empty() || l.starts_with('#') {
+                continue;
+            }
+            let parts: Vec<&str> = l.split('|').collect();
+            if parts.len() == 4 {
+                comments.push(Comment {
+                    id: parts[0].trim().to_string(),
+                    post_id: parts[1].trim().to_string(),
+                    author: parts[2].trim().to_string(),
+                    text: parts[3].trim().to_string(),
+                    timestamp: timestamp_base + i as u64,
+                });
+            }
+        }
+    }
+    comments
+}
+
 pub fn run_comment_stream_simulation() {
     println!("==================================================");
     println!(" SOCIAL MEDIA REPEATED COMMENT DETECTION SYSTEM ");
+    println!(" Group 4: Sandipkumar, Sairaj, Bhavdeep           ");
+    println!(" Storage Source: External File (comments.txt)     ");
     println!("==================================================");
 
     let (tx, rx): (Sender<Comment>, Receiver<Comment>) = mpsc::channel();
 
-    // Spawn comment ingestion producer thread simulating live social media traffic
+    // Spawn comment ingestion producer thread reading from external file
     thread::spawn(move || {
-        let sample_comments = vec![
-            (
-                "c1",
-                "post_101",
-                "alice",
-                "This is an amazing tutorial! Thanks for sharing.",
-            ),
-            (
-                "c2",
-                "post_101",
-                "bob",
-                "This is an amazing tutorial! Thanks for sharing.",
-            ), // Exact duplicate
-            (
-                "c3",
-                "post_101",
-                "charlie",
-                "Very helpful, thank you so much!",
-            ),
-            (
-                "c4",
-                "post_101",
-                "david",
-                "This is an amazing tutorial! Thanks for sharing!!",
-            ), // Near duplicate
-            (
-                "c5",
-                "post_102",
-                "eve",
-                "Check out my profile for free crypto! $$$",
-            ),
-            (
-                "c6",
-                "post_101",
-                "bot_user",
-                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            ), // Spam pattern
-            (
-                "c7",
-                "post_102",
-                "frank",
-                "Interesting perspective on this topic.",
-            ),
-            (
-                "c8",
-                "post_102",
-                "grace",
-                "Interesting perspective on this topic!",
-            ), // Near duplicate
-            (
-                "c9",
-                "post_101",
-                "alice",
-                "Checking my previous comment update.",
-            ),
-            (
-                "c10",
-                "post_102",
-                "bot_user2",
-                "Check out my profile for free crypto! $$$",
-            ), // Exact duplicate spam
-        ];
-
-        for (i, (id, post_id, author, text)) in sample_comments.into_iter().enumerate() {
-            let comment = Comment {
-                id: id.to_string(),
-                post_id: post_id.to_string(),
-                author: author.to_string(),
-                text: text.to_string(),
-                timestamp: 1718000000 + i as u64,
-            };
-
+        let comments = load_comments_from_file("comments.txt");
+        for comment in comments {
             if tx.send(comment).is_err() {
                 println!("Receiver dropped.");
                 break;
             }
-            thread::sleep(Duration::from_millis(100));
+            thread::sleep(Duration::from_millis(150));
         }
     });
 
@@ -319,7 +297,10 @@ pub fn run_comment_stream_simulation() {
     println!("==================================================");
     println!("Total Comments Processed: {}", total_processed);
     println!("Total Flagged/Duplicates: {}", flagged_count);
-    println!("Clean Unique Comments:    {}", total_processed - flagged_count);
+    println!(
+        "Clean Unique Comments:    {}",
+        total_processed - flagged_count
+    );
     println!("Processing Duration:      {:?}", start_time.elapsed());
     println!("==================================================");
 }
